@@ -1,0 +1,80 @@
+[
+	{
+		"$": "重複はoverwriteされて最後の定義が使われるdecoder実装が多いので、",
+		"$": "そういう実装を前提にして、コメントとして利用する。",
+		"$": "(以降のnameが重複している部分など)",
+		"$": "",
+		"$": "また、nameの無いdictは捨てる実装をしているので。",
+		"$": "この全体コメントのdictブロックは読み捨てられる。",
+		"$": ""
+	},
+	{
+		"name": "diskエントリ : このエントリは特殊扱いであり、変更不可",
+		"name": "disk",
+		"mode": 0,
+		"description": "操作対象となるdiskイメージファイル"
+	},
+	{
+		"name": "MBR 領域",
+		"name": "mbr",
+		"mode": 1,
+		"offset": "0x0",
+		"description": "MBR 領域"
+	},
+	{
+		"name": "S/N 領域",
+		"name": "sn",
+		"mode": 1,
+		"offset": "0x200",
+		"description": "S/N 領域"
+	},
+	{
+		"name": "u-boot 領域",
+		"name": "uboot",
+		"mode": 1,
+		"offset": "0x400",
+		"description": "u-boot 領域"
+	},
+	{
+		"name": "NW_CONFIG 領域",
+		"name": "hwconfig",
+		"mode": 1,
+		"offset": "0x80000",
+		"description": "HW_CONFIG 領域"
+	},
+	{
+		"name": "KERNEL 領域",
+		"name": "kernel",
+		"mode": 1,
+		"offset": "0x100000",
+		"description": "KERNEL 領域"
+	},
+	{
+		"name": "INITRD2 領域",
+		"name": "initrd2",
+		"mode": 1,
+		"offset": "0x400000",
+		"description": "INITRD2 領域"
+	},
+	{
+		"name": "INITRD 領域",
+		"name": "initrd",
+		"mode": 1,
+		"offset": "0x600000",
+		"description": "INITRD 領域"
+	},
+	{
+		"name": "WAVEFORM 領域",
+		"name": "waveform",
+		"mode": 1,
+		"offset": "0x700000",
+		"description": "WAVEFORM 領域"
+	},
+	{
+		"name": "LOGO 領域",
+		"name": "logo",
+		"mode": 1,
+		"offset": "0x900000",
+		"description": "LOGO 領域"
+	}
+]
